@@ -1,11 +1,12 @@
 {
-  "name": "party",
+  "name": "Party",
   "version": "0.0.1",
   "description": "Real time quiz system.",
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha test/**/*-test.js"
+    "test": "mocha test/**/*-test.js",
+    "migrate": "db-migrate up --config ./config/database.json"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,12 @@
   "author": "sota1235",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sota1235/All-Star-Thanksgiving/issues"
+    "url": "https://github.com/sota1235/Party/issues"
   },
-  "homepage": "https://github.com/sota1235/All-Star-Thanksgiving#readme",
+  "homepage": "https://github.com/sota1235/Party#readme",
   "dependencies": {
     "animate.css": "^3.4.0",
+    "async": "^1.5.0",
     "basic-auth-connect": "^1.0.0",
     "body-parser": "^1.14.1",
     "bootstrap": "^3.3.6",
@@ -56,6 +58,7 @@
     "babelify": "^7.1.0",
     "browserify": "^12.0.1",
     "chai": "^3.4.1",
+    "db-migrate": "^0.9.23",
     "espower-babel": "^4.0.0",
     "glob": "^5.0.15",
     "gulp": "^3.9.0",

@@ -45,12 +45,8 @@ module.exports.QuestionService = function(app) {
    */
   var getAllQuestions = function(res) {
     Questions.findAll()
-      .then(function(result) {
-        res.json(result);
-      })
-      .catch(function(err) {
-        res.json(err);
-      });
+      .then(function(result) { res.json(result); })
+      .catch(function(err)   { res.json(err); });
   };
 
   /**
